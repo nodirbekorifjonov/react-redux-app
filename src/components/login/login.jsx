@@ -30,7 +30,7 @@ const Login = () => {
             setState={setPassword}
           />
           <button
-            className="btn btn-primary w-100 py-2"
+            className="btn btn-primary w-100 py-2 mt-2"
             type="submit"
             disabled={isLoading}
             onClick={loginHandler}
