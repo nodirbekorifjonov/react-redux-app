@@ -10,7 +10,7 @@ const Navbar = () => {
         className="d-flex align-items-center link-body-emphasis text-decoration-none"
       >
         {logo}
-        <span className="fs-4">SAMMI</span>
+        <span className="fs-4 fw-bold">Sammi</span>
       </Link>
 
       <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
