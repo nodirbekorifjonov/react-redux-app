@@ -18,6 +18,7 @@ export const authSlice = createSlice({
       state.isLoggedIn = true;
       state.isLoading = false;
       state.user = action.payload;
+      state.error = null;
     },
     signUserFailure: (state, action) => {
       state.isLoading = false;
