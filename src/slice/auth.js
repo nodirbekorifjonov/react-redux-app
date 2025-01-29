@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { setItem } from "../helpers/persistance-storage";
 
 const initialState = {
   isLoading: false,
@@ -19,6 +20,7 @@ export const authSlice = createSlice({
       state.isLoading = false;
       state.user = action.payload;
       state.error = null;
+      setItem("token", action.payload.token);
     },
     signUserFailure: (state, action) => {
       state.isLoading = false;

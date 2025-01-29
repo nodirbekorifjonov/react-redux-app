@@ -1,4 +1,4 @@
-import { logo } from "../constants/constants";
+import { logo } from "../../constants/constants";
 import { Input } from "../../ui";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -40,7 +40,7 @@ const Register = () => {
           {logo}
           <h1 className="h3 mb-3 fw-normal">Please register</h1>
           <ValidationError />
-          
+
           <Input label={"Username"} state={name} setState={setName} />
           <Input label={"Email address"} state={email} setState={setEmail} />
           <Input

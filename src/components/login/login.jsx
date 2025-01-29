@@ -1,4 +1,4 @@
-import { logo } from "../constants/constants";
+import { logo } from "../../constants/constants";
 import { Input } from "../../ui";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
