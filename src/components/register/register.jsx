@@ -40,7 +40,7 @@ const Register = () => {
     if (isLoggedIn) {
       navigate("/");
     }
-  }, []);
+  });
 
   return (
     <div className="d-flex align-items-center py-4 text-center mt-5">

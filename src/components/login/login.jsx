@@ -27,7 +27,7 @@ const Login = () => {
       dispatch(signUserSuccess(response.user));
       navigate("/");
     } catch (error) {
-      dispatch(signUserFailure(error.response.data.errors));
+      dispatch(signUserFailure(error && error.response.data.errors));
     }
   };
 
@@ -35,7 +35,7 @@ const Login = () => {
     if (isLoggedIn) {
       navigate("/");
     }
-  }, []);
+  }, [isLoggedIn]);
 
   return (
     <div className="d-flex align-items-center py-4 text-center mt-5">
